@@ -8,21 +8,14 @@ namespace EmployeeWageComputationStatement
 {
     internal class EmployeeWageComputation
     {
-        const int IS_PRESENT=1;
-        const int IS_ABSENT=2;
-        public void DisplyayAttendence()
+        int Employee_Wage_Per_Hour=20;
+        int Employee_Working_hours=8;
+        public void Full_Day_Salary()
         {
-        Random random = new Random();
-            int check = random.Next(1, 3);
-            switch(check)
-            {
-                case IS_PRESENT:
-                    Console.WriteLine("Employee is present");
-                    break;
-                    case IS_ABSENT:
-                    Console.WriteLine("Employee is absent");
-                    break ;
-            }
+            int total_Salary = Employee_Wage_Per_Hour * Employee_Working_hours;
+            Console.WriteLine("One day employee salary:->" +total_Salary);
+
         }
+        
     }
 }
